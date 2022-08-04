@@ -24,9 +24,9 @@ Before running any code from this repo you have to:
    for more information. If you want to build from source, you could find guidance [here](https://github.com/WilliamWu96/carla_rl/blob/main/README.md)
 3. **Install CARLA Python bindings** in order to be able to manage CARLA from Python code. Open your terminal and type:
    
-    * *Windows*: `cd your-path-to-carla/CARLA_0.9.9.4/WindowsNoEditor/PythonAPI/carla/dist/`
-    * *Linux*: `cd your-path-to-carla/CARLA_0.9.9.4/PythonAPI/carla/dist/`
-    * Extract `carla-0.9.9-py3.7-XXX-amd64.egg` where `XXX` depends on your OS, e.g. `win` for Windows.
+    * *Windows*: `cd your-path-to-carla/CARLA_0.9.10.1/WindowsNoEditor/PythonAPI/carla/dist/`
+    * *Linux*: `cd your-path-to-carla/CARLA_0.9.10.1/PythonAPI/carla/dist/`
+    * Extract `carla-0.9.10.1-py3.7-XXX-amd64.egg` where `XXX` depends on your OS, e.g. `win` for Windows.
     * set up conda environment
     ```
       conda create -n carla-ppo python=3.5
