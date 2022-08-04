@@ -5,7 +5,7 @@ https://roomy-carol-27e.notion.site/CALAR_RL_agent-3b2ef2e49a5f461f9bbc176cd68ba
 
 Software:
 - Python 3.7
-- CARLA 0.9.9
+- CARLA 0.9.10.1
 - Libraries: install from `requirements.txt`
 
 Hardware (minimum):
@@ -19,7 +19,7 @@ Hardware (minimum):
 
 Before running any code from this repo you have to:
 1. **Clone this repo**: `git clone https://github.com/Luca96/carla-driving-rl-agent.git`
-2. **Download CARLA 0.9.9** from their GitHub repo, [here](https://github.com/carla-simulator/carla/releases/tag/0.9.9) 
+2. **Download CARLA 0.9.10.1** from their GitHub repo, [here](https://github.com/carla-simulator/carla/releases/tag/0.9.10.1) 
    where you can find precompiled binaries which are ready-to-use. Refer to [carla-quickstart](https://carla.readthedocs.io/en/latest/start_quickstart/)
    for more information.
 3. **Install CARLA Python bindings** in order to be able to manage CARLA from Python code. Open your terminal and type:
@@ -36,7 +36,7 @@ Before running any code from this repo you have to:
       #settings for conda activation, you can change the egg file according to your carla environment but be careful about the python version 
       mkdir -p $CONDA_PREFIX/etc/conda/activate.d
       echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.9-py3.7-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh 
+      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh 
 
       conda deactivate 
       conda activate carla-ppo
