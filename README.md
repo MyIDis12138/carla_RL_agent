@@ -18,7 +18,7 @@ Hardware (minimum):
 ## Installation
 
 Before running any code from this repo you have to:
-1. **Clone this repo**: `git clone https://github.com/Luca96/carla-driving-rl-agent.git`
+1. **Clone this repo**: `git clone https://github.com/MyIDis12138/carla_RL_agent.git`
 2. **Download CARLA 0.9.10.1** from their GitHub repo, [here](https://github.com/carla-simulator/carla/releases/tag/0.9.10.1) 
    where you can find precompiled binaries which are ready-to-use. Refer to [carla-quickstart](https://carla.readthedocs.io/en/latest/start_quickstart/)
    for more information. If you want to build from source, you could find guidance [here](https://github.com/WilliamWu96/carla_rl/blob/main/README.md)
