@@ -1,0 +1,8 @@
+numpy
+scipy
+tensorflow-probability==0.11.1
+gym
+pygame
+opencv-python
+networkx
+matplotlib
