@@ -33,10 +33,10 @@ Before running any code from this repo you have to:
       conda activate carla-ppo
       conda install -c conda-forge cudatoolkit=10.1 cudnn=7.6
 
-      #settings for conda activation
+      #settings for conda activation, you can change the egg file according to your carla environment but be careful about the python version 
       mkdir -p $CONDA_PREFIX/etc/conda/activate.d
       echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.6-py3.5-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.9-py3.7-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh 
 
       conda deactivate 
       conda activate carla-ppo
