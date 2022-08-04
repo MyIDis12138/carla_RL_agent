@@ -46,10 +46,11 @@ Before running any code from this repo you have to:
     ```
 
 Before running the repository's code be sure to **start CARLA first**: 
-* *Windows*: `your-path-to/CARLA_0.9.9.4/WindowsNoEditor/CarlaUE4.exe`
-* *Linux*: `your-path-to/CARLA_0.9.9.4/./CarlaUE4.sh`
+* *Windows*: `your-path-to/CARLA_0.9.10.1/WindowsNoEditor/CarlaUE4.exe`
+* *Linux*: `your-path-to/CARLA_0.9.10.1/./CarlaUE4.sh`
+* *Build from source* `your-path-to/CARLA_0.9.10.1/  make launch`
 * [optional] To use less resources add these flags to the previous command: `-windowed -ResX=32 -ResY=32 --quality-level=Low`.
-    For example `./CarlaUE4.sh --quality-level=Low`.
+    For example `./CarlaUE4.sh -fps=10 --quality-level=Low`.
 
 ---
 
