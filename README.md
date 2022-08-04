@@ -3,7 +3,7 @@ https://roomy-carol-27e.notion.site/CALAR_RL_agent-3b2ef2e49a5f461f9bbc176cd68ba
 
 reference:
 paper: https://arxiv.org/pdf/1711.03938.pdf
-github: https://github.com/Luca96/carla-driving-rl-agent
+code: https://github.com/Luca96/carla-driving-rl-agent
 
 ## Requirements
 
