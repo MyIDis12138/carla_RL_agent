@@ -29,7 +29,7 @@ Before running any code from this repo you have to:
     * Extract `carla-0.9.10.1-py3.7-XXX-amd64.egg` where `XXX` depends on your OS, e.g. `win` for Windows.
     * set up conda environment
     ```
-      conda create -n carla-ppo python=3.5
+      conda create -n carla-ppo python=3.7
       conda activate carla-ppo
       conda install -c conda-forge cudatoolkit=10.1 cudnn=7.6
 
