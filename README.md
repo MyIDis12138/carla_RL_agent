@@ -1,9 +1,15 @@
+## Notion notebook
+https://roomy-carol-27e.notion.site/CALAR_RL_agent-3b2ef2e49a5f461f9bbc176cd68ba00d
+
+reference:
+paper: https://arxiv.org/pdf/1711.03938.pdf
+code: https://github.com/Luca96/carla-driving-rl-agent
 
 ## Requirements
 
 Software:
 - Python 3.7
-- CARLA 0.9.9
+- CARLA 0.9.10.1
 - Libraries: install from `requirements.txt`
 
 Hardware (minimum):
@@ -16,25 +22,25 @@ Hardware (minimum):
 ## Installation
 
 Before running any code from this repo you have to:
-1. **Clone this repo**: `git clone https://github.com/Luca96/carla-driving-rl-agent.git`
-2. **Download CARLA 0.9.9** from their GitHub repo, [here](https://github.com/carla-simulator/carla/releases/tag/0.9.9) 
+1. **Clone this repo**: `git clone https://github.com/MyIDis12138/carla_RL_agent.git`
+2. **Download CARLA 0.9.10.1** from their GitHub repo, [here](https://github.com/carla-simulator/carla/releases/tag/0.9.10.1) 
    where you can find precompiled binaries which are ready-to-use. Refer to [carla-quickstart](https://carla.readthedocs.io/en/latest/start_quickstart/)
-   for more information.
+   for more information. If you want to build from source, you could find guidance [here](https://github.com/WilliamWu96/carla_rl/blob/main/README.md)
 3. **Install CARLA Python bindings** in order to be able to manage CARLA from Python code. Open your terminal and type:
    
-    * *Windows*: `cd your-path-to-carla/CARLA_0.9.9.4/WindowsNoEditor/PythonAPI/carla/dist/`
-    * *Linux*: `cd your-path-to-carla/CARLA_0.9.9.4/PythonAPI/carla/dist/`
-    * Extract `carla-0.9.9-py3.7-XXX-amd64.egg` where `XXX` depends on your OS, e.g. `win` for Windows.
+    * *Windows*: `cd your-path-to-carla/CARLA_0.9.10.1/WindowsNoEditor/PythonAPI/carla/dist/`
+    * *Linux*: `cd your-path-to-carla/CARLA_0.9.10.1/PythonAPI/carla/dist/`
+    * Extract `carla-0.9.10.1-py3.7-XXX-amd64.egg` where `XXX` depends on your OS, e.g. `win` for Windows.
     * set up conda environment
     ```
-      conda create -n carla-ppo python=3.5
+      conda create -n carla-ppo python=3.7
       conda activate carla-ppo
       conda install -c conda-forge cudatoolkit=10.1 cudnn=7.6
 
-      #settings for conda activation
+      #settings for conda activation, you can change the egg file according to your carla environment but be careful about the python version 
       mkdir -p $CONDA_PREFIX/etc/conda/activate.d
       echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.6-py3.5-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+      echo 'export PYTHONPATH=your-paht-to-carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64.egg' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh 
 
       conda deactivate 
       conda activate carla-ppo
@@ -44,10 +50,11 @@ Before running any code from this repo you have to:
     ```
 
 Before running the repository's code be sure to **start CARLA first**: 
-* *Windows*: `your-path-to/CARLA_0.9.9.4/WindowsNoEditor/CarlaUE4.exe`
-* *Linux*: `your-path-to/CARLA_0.9.9.4/./CarlaUE4.sh`
+* *Windows*: `your-path-to/CARLA_0.9.10.1/WindowsNoEditor/CarlaUE4.exe`
+* *Linux*: `your-path-to/CARLA_0.9.10.1/./CarlaUE4.sh`
+* *Build from source* `your-path-to/CARLA_0.9.10.1/  make launch`
 * [optional] To use less resources add these flags to the previous command: `-windowed -ResX=32 -ResY=32 --quality-level=Low`.
-    For example `./CarlaUE4.sh --quality-level=Low`.
+    For example `./CarlaUE4.sh -fps=10 --quality-level=Low`.
 
 ---
 
