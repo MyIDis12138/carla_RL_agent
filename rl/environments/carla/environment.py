@@ -1245,7 +1245,7 @@ class ThreeCameraCARLAEnvironment(OneCameraCARLAEnvironment):
         image = self.render_data['camera']
         env_utils.display_image(self.display, image, window_size=self.window_size)
 
-    def on_sensors_data(self, data: dict) -> dict:
+    def on_sensorxs_data(self, data: dict) -> dict:
         front_image = self.sensors['front_camera'].convert_image(data['front_camera'])
         left_image = self.sensors['left_camera'].convert_image(data['left_camera'])
         right_image = self.sensors['right_camera'].convert_image(data['right_camera'])

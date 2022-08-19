@@ -58,13 +58,13 @@ def record(amount: int, steps: int, town: str, weights: str, seed=42):
 if __name__ == '__main__':
     # CURRICULUM LEARNING:
     # -- STAGE-1 --
-    # stage1 = learning.stage_s1(episodes=5, timesteps=512, batch_size=64, gamma=0.9999, lambda_=0.999, save_every='end',
-    #                            update_frequency=1, policy_lr=3e-4, value_lr=3e-4, dynamics_lr=3e-4,
-    #                            clip_ratio=0.2, entropy_regularization=1.0, seed_regularization=True, load=False,
-    #                            seed=51, polyak=1.0, aug_intensity=0.0, repeat_action=1, load_full=False)\
+    stage1 = learning.stage_s1(episodes=5, timesteps=512, batch_size=64, gamma=0.9999, lambda_=0.999, save_every='end',
+                               update_frequency=1, policy_lr=3e-4, value_lr=3e-4, dynamics_lr=3e-4,
+                               clip_ratio=0.2, entropy_regularization=1.0, seed_regularization=True, load=False,
+                               seed=51, polyak=1.0, aug_intensity=0.0, repeat_action=1, load_full=False)\
     
-    # stage1.run2(epochs=100, epoch_offset=0)
-    # exit()
+    stage1.run2(epochs=100, epoch_offset=0)
+    exit()
 
     # # -- STAGE-2 --
     # stage2 = learning.stage_s2(episodes=5, timesteps=512, batch_size=64, gamma=0.9999, lambda_=0.999, save_every='end',
