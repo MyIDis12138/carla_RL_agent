@@ -1,6 +1,3 @@
-## Notion notebook
-https://roomy-carol-27e.notion.site/CALAR_RL_agent-3b2ef2e49a5f461f9bbc176cd68ba00d
-
 reference:
 paper: https://arxiv.org/pdf/1711.03938.pdf
 code: https://github.com/Luca96/carla-driving-rl-agent
